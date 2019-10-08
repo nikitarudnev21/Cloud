@@ -1,0 +1,13 @@
+:root{
+    --dark-color: #042f4b;
+    --light-color:#fff6da;
+}
+body{
+    background-color: var(--dark-color);
+}
+.main-container{
+    height: 800px;
+    width: 800px;
+    border: 2px solid gold;
+    margin: 0 auto;
+}
