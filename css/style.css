@@ -4,10 +4,208 @@
 }
 body{
     background-color: var(--dark-color);
+    margin-top: 120px;
+    animation-name: bodys;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    
 }
 .main-container{
+    position: relative;
     height: 800px;
     width: 800px;
-    border: 2px solid gold;
+    border: 3px solid goldenrod;
     margin: 0 auto;
+    font-family: 'Mansalva', cursive;
+    animation-name: borders;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+#cloud1{
+    margin-left: 100px;
+    margin-top: 100px;
+    animation-name: cloud;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#cloud2{
+    margin-left: 250px;
+    margin-top: 50px;
+    animation-name: cloud;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#cloud3{
+    margin-left: 300px; 
+    margin-top: 60px;
+    animation-name: cloud;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+h1{
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    bottom: 11%;
+    left: 23%;
+    font-size: 2rem;
+    letter-spacing: 0.2cm;
+    background: gold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    animation-name: hs;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#mount{
+    margin-left: 100px;
+}
+
+@keyframes bodys{
+    0%
+    {  /*1*/
+      background: darkblue;
+    }
+    3%
+    {  /*1*/
+      background: lightskyblue;
+    }
+    10%
+    {  /*2*/
+      background: navy;
+    }
+    20%
+    {  /*3*/
+      background: blue;
+      
+    }
+    30%
+    {  /*4*/
+      background: #3224F0;
+    }
+    40%
+    {  /*5*/
+      background: #532AF0;
+    }
+    50%
+    {  /*6*/
+      background: #0032FF;
+    }
+    60%
+    {  /*7*/
+      background: #623EF0;
+    }
+    70%
+    {  /*8*/
+      background: #7641F0;
+    }
+    80%
+    {  /*9*/
+      background: #802CF0;
+    }
+    90%
+    {  /*9*/
+      background: #622CF0;
+    }
+    100%
+    {  /*44*/
+      background: navy;
+    }
+   }
+   @keyframes hs{
+       0%{
+           text-shadow: gold 0 0 5px;
+       }
+       50%{
+        text-shadow: red 0 0 5px;
+       }
+       100%{
+        text-shadow: green 0 0 5px;
+       }
+   }
+
+   @keyframes borders {
+    0%{
+      border-left: 7px inset #0083B0;
+      border-top: 7px inset #0032FF;
+      border-right: 7px inset #030530;
+      border-bottom: 7px inset #3224F0;
+      background-color:#6027DD;
+      box-shadow: navy 10px 10px 20px;
+    }
+    20%{
+      border-left: 7px inset #3f2b96;
+      border-top: 7px inset #532AF0;
+      border-right: 7px inset #6027DD;
+      border-bottom: 7px inset #622CF0;
+      background-color: #532AF0;
+      box-shadow: #3f2b96 10px 10px 20px;
+    }
+    40%{
+      border-left: 7px inset #623EF0;
+      border-top: 7px inset #7641F0;
+      border-right: 7px inset #802CF0;
+      border-bottom: 7px inset blueviolet;
+      background-color: #3224F0;  
+      box-shadow: blueviolet 10px 10px 20px;  
+    }
+    60%{
+      border-left: 7px inset darkorchid;
+      border-top: 7px inset darkmagenta;
+      border-right: 7px inset rgb(28, 12, 83);
+      border-bottom: 7px inset rgb(29, 18, 177);  
+      background-color: rgb(76, 0, 255);
+      box-shadow: rgb(29, 18, 177) 10px 10px 20px;  
+    }
+    80%{
+      border-left: 7px inset blue;
+      border-top: 7px inset #0032FF;
+      border-right: 7px inset  rgba(33, 71, 223, 0.966);
+      border-bottom: 7px inset  rgb(0, 22, 219);
+      background-color: #802CF0;
+      box-shadow: rgba(33, 71, 223, 0.966) 10px 10px 20px;    
+    }
+    100%{
+      border-left: 7px inset rgb(76, 0, 255);
+      border-top: 7px inset #0032FF;
+      border-right: 7px inset  rgba(33, 71, 223, 0.966);
+      border-bottom: 7px inset  #00B4DB;
+      background-color: #7641F0;
+      box-shadow: #7641F0 10px 10px 20px;  
+    }
+}
+@keyframes cloud{
+    0%
+    {
+      opacity: 0.7
+    }
+    20%
+    {
+      opacity: 0.85;
+    }
+    40%
+    {
+      opacity: 1;
+    }
+    60%
+    {
+      opacity: 0.85;
+    }
+    100%
+    {
+      opacity: 0.7;
+    }
+  }
